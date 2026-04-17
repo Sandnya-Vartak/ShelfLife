@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShelfLife | Smart Storage Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="app-body">
+<main class="dashboard-shell">
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-mark">
+                <img src="../assets/logo.svg" alt="ShelfLife logo">
+            </div>
+            <div>
+                <p class="brand-kicker">Food Expiry Manager</p>
+                <p class="brand-name">ShelfLife</p>
+                    <p class="brand-tagline">ShelfLife: Freshness Tracked, Savings Stacked.</p>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="/dashboard/" class="sidebar-link">
+                <span class="nav-icon"><i class="fas fa-chart-line"></i></span>
+                <span>Dashboard</span>
+            </a>
+            <a href="/pantry/" class="sidebar-link">
+                <span class="nav-icon"><i class="fas fa-boxes-stacked"></i></span>
+                <span>Pantry</span>
+            </a>
+            <a href="/utilization/" class="sidebar-link">
+                <span class="nav-icon"><i class="fas fa-wallet"></i></span>
+                <span>Financial Impact</span>
+            </a>
+            <a href="/consumption-summary/" class="sidebar-link">
+                <span class="nav-icon"><i class="fas fa-chart-pie"></i></span>
+                <span>Consumption</span>
+            </a>
+            <a href="/research-guide/" class="sidebar-link active">
+                <span class="nav-icon"><i class="fas fa-book-open"></i></span>
+                <span>Smart Storage Guide</span>
+            </a>
+            <a href="/notifications/" class="sidebar-link">
+                <span class="nav-icon"><i class="fas fa-bell"></i></span>
+                <span class="sidebar-link-label">Notifications</span>
+                <span class="sidebar-notification-badge" data-notification-badge hidden>0</span>
+            </a>
+        </nav>
+
+        <div class="profile-panel">
+            <button class="sidebar-user-card profile-toggle" type="button" data-profile-toggle>
+                <span class="user-avatar" data-user-avatar>SL</span>
+                <div class="profile-meta">
+                    <strong data-user-name>Loading profile</strong>
+                </div>
+                <span class="profile-caret"><i class="fas fa-chevron-right"></i></span>
+            </button>
+            <div class="profile-dropdown" data-profile-dropdown>
+                <div class="profile-dropdown-header">
+                    <span class="profile-dropdown-name" data-user-name></span>
+                </div>
+                <button type="button" class="profile-dropdown-item profile-link" data-profile-link>
+                    <i class="fas fa-user-circle"></i>
+                    Profile
+                </button>
+                <button type="button" class="profile-dropdown-item" data-logout-link>
+                    <i class="fas fa-right-from-bracket"></i>
+                    Logout
+                </button>
+                <button class="profile-dropdown-item danger" type="button" data-delete-account>
+                    <i class="fas fa-trash"></i>
+                    Delete Account
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <section class="content-area">
+        <div class="content-topbar">
+            <div class="topbar-intro">
+                <p class="section-tag">Smart Storage</p>
+                <h1 class="content-title">Smart Storage Guide</h1>
+                <p class="topbar-copy">A cleaner kitchen reference for storage habits, fast planning, and simple ways to rescue food before it turns into waste.</p>
+            </div>
+        </div>
+
+        <section class="content-card activity-card research-hero-card">
+            <div class="research-hero-layout">
+                <div class="research-hero-copy">
+                    <h2 class="section-heading">A practical guide, not just theory</h2>
+                    <p class="page-copy">
+                        Keeping track of expiry dates and acting early protects your budget, reduces waste, and makes meal planning less stressful. Use ShelfLife as a cue to cook with what needs attention first.
+                    </p>
+                </div>
+                <div class="research-highlight-box">
+                    <span class="research-highlight-label">Best routine</span>
+                    <strong>Check expiring items once a week and build one meal around them first.</strong>
+                </div>
+            </div>
+
+            <section class="stats-row research-stats">
+                <article class="metric-card">
+                    <span class="metric-icon fresh-dot"></span>
+                    <p>Plan around expiry</p>
+                    <strong>Review alerts weekly and group similar ingredients.</strong>
+                </article>
+                <article class="metric-card">
+                    <span class="metric-icon warning-dot"></span>
+                    <p>Cook tactical meals</p>
+                    <strong>Combine soon-to-expire foods into one dish instead of saving them for later.</strong>
+                </article>
+                <article class="metric-card">
+                    <span class="metric-icon danger-dot"></span>
+                    <p>Measure waste</p>
+                    <strong>Notice repeat waste patterns and adjust how much you buy next time.</strong>
+                </article>
+            </section>
+        </section>
+
+        <section class="content-card activity-card research-tips-card">
+            <div class="research-section-head">
+                <div>
+                    <p class="section-tag">Storage Habits</p>
+                    <h2 class="section-heading">Research-backed habits that help</h2>
+                </div>
+                <p class="page-copy">
+                    Small changes in storage and planning usually prevent more waste than complicated systems.
+                </p>
+            </div>
+
+            <div class="research-tip-list" aria-label="Food storage habits">
+                <article class="research-tip-item">
+                    <h3>Keep greens dry</h3>
+                    <p>Wrap leafy greens in paper towel and store them in a breathable bag so excess moisture does not speed up spoilage.</p>
+                </article>
+                <article class="research-tip-item">
+                    <h3>Portion bulk buys early</h3>
+                    <p>Split larger packs when you get home, freeze what you will not use soon, and log those portions so they stay visible.</p>
+                </article>
+                <article class="research-tip-item">
+                    <h3>Shop using your summary</h3>
+                    <p>Compare what gets consumed versus what keeps expiring so your next grocery run reflects real usage.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-card activity-card">
+            <div class="research-section-head">
+                <div>
+                    <p class="section-tag">Use-It Ideas</p>
+                    <h2 class="section-heading">Category-wise rescue recipes</h2>
+                </div>
+                <p class="page-copy">
+                    When something is close to expiry, use the category as your shortcut. These ideas are quick, realistic, and easy to explain in a presentation.
+                </p>
+            </div>
+
+            <section class="recipe-guide-grid" aria-label="Category wise recipe ideas for expiring food">
+                <article class="recipe-guide-card">
+                    <span class="recipe-guide-label">Dairy</span>
+                    <h3>Milk</h3>
+                    <p>If milk is close to expiring, heat and curdle it with lemon to make fresh paneer for bhurji, sandwiches, or curry.</p>
+                    <ul class="recipe-guide-list">
+                        <li>Milk to paneer cubes for sabzi or wraps.</li>
+                        <li>Use extra milk in kheer, white sauce pasta, or pancakes.</li>
+                    </ul>
+                </article>
+
+                <article class="recipe-guide-card">
+                    <span class="recipe-guide-label">Fruit Spreads</span>
+                    <h3>Jam</h3>
+                    <p>Fruit jam nearing its best date can still become a quick filling, glaze, or dessert base instead of sitting forgotten in the fridge.</p>
+                    <ul class="recipe-guide-list">
+                        <li>Spread jam inside bread rolls or toast pockets.</li>
+                        <li>Whisk into yogurt, oatmeal, or milkshakes for a fast sweet snack.</li>
+                    </ul>
+                </article>
+
+                <article class="recipe-guide-card">
+                    <span class="recipe-guide-label">Produce</span>
+                    <h3>Bananas and soft fruit</h3>
+                    <p>Very ripe fruit is perfect for blended or baked recipes because texture matters less once it is cooked.</p>
+                    <ul class="recipe-guide-list">
+                        <li>Bananas into banana bread, smoothies, or overnight oats.</li>
+                        <li>Berries or apples into compote, topping, or quick crumble.</li>
+                    </ul>
+                </article>
+
+                <article class="recipe-guide-card">
+                    <span class="recipe-guide-label">Vegetables</span>
+                    <h3>Leafy greens and mixed veg</h3>
+                    <p>When vegetables start losing crunch, move them into cooked dishes where seasoning and heat do the work.</p>
+                    <ul class="recipe-guide-list">
+                        <li>Spinach or coriander into soup, paratha dough, or chutney.</li>
+                        <li>Mixed vegetables into fried rice, omelets, pasta, or cutlets.</li>
+                    </ul>
+                </article>
+
+                <article class="recipe-guide-card">
+                    <span class="recipe-guide-label">Bakery</span>
+                    <h3>Bread</h3>
+                    <p>Drying bread usually still has a second life. It is one of the easiest ingredients to rescue.</p>
+                    <ul class="recipe-guide-list">
+                        <li>Bread into upma, crumbs, toast pizza, or bread pudding.</li>
+                        <li>Cube and bake for croutons to use with soup or salad.</li>
+                    </ul>
+                </article>
+
+                <article class="recipe-guide-card">
+                    <span class="recipe-guide-label">Cooked Staples</span>
+                    <h3>Rice and leftovers</h3>
+                    <p>Cooked rice and leftovers should be used quickly, so recipes that combine everything into one pan work best.</p>
+                    <ul class="recipe-guide-list">
+                        <li>Rice into lemon rice, vegetable fried rice, or rice cutlets.</li>
+                        <li>Dal or curry into stuffed paratha, soup, or sauce base.</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </section>
+</main>
+<script src="../js/notificationBadge.js"></script>
+<script src="../js/researchGuide.js"></script>
+</body>
+</html>
